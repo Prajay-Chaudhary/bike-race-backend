@@ -1,3 +1,3 @@
 class Contest < ApplicationRecord
-  validates :email, uniqueness: true
+  validates :email, uniqueness: { message: "Email already exist." }
 end
